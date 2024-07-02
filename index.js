@@ -68,7 +68,7 @@ function init() {
     inquirer.prompt(questions).then((data) => {
         const html = generateMarkdown(data)
 
-        writeToFile('README.md', html);
+        writeToFile('README-GEN.md', html);
     })
 
 }
